@@ -22,7 +22,7 @@ struct TipThankYouView: View {
         Text("Thank you so much!")
           .font(.title2.bold())
 
-        Text("Your support means a lot and helps keep Foqos going.")
+        Text("Your support means a lot and helps keep Blocktab going.")
           .font(.body)
           .foregroundStyle(.secondary)
       }

@@ -194,7 +194,7 @@ struct BlockedProfileDomainsFields: View {
     CustomToggle(
       title: "Sync to Mac",
       description:
-        "Block the same selected domains on your Mac with the Foqos for Mac app.",
+        "Block the same selected domains on your Mac with the Blocktab for Mac app.",
       isOn: $draft.enableMacSync,
       isDisabled: disabled,
       learnMoreURL: URL(string: "https://www.foqos.app/mac.html")
@@ -434,7 +434,7 @@ struct BlockedProfileStrictSafeguardsFields: View {
     CustomToggle(
       title: "Prevent App Deletion",
       description:
-        "Stop apps from being deleted during sessions, including Foqos.",
+        "Stop apps from being deleted during sessions, including Blocktab.",
       isOn: $draft.enableStrictMode,
       isDisabled: disabled
     )
@@ -464,7 +464,7 @@ struct BlockedProfileSessionSafeguardsFields: View {
     ProfileFieldDivider(isVisible: showsSeparators)
 
     CustomToggle(
-      title: "Require Foqos to Stop",
+      title: "Require Blocktab to Stop",
       description:
         "Prevent this profile from being stopped by Control Center, Shortcuts, NFC links, or QR links outside the app.",
       isOn: $draft.disableBackgroundStops,

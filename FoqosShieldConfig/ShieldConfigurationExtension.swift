@@ -61,11 +61,11 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
       backgroundColor: brandColor,
       icon: emojiIcon,
       title: ShieldConfiguration.Label(
-        text: randomMessage.title,
+        text: "Blocked by Blocktab",
         color: .white
       ),
       subtitle: ShieldConfiguration.Label(
-        text: randomMessage.subtitle,
+        text: "\(title) can wait. Open Blocktab when you’re ready to return.",
         color: UIColor.white.withAlphaComponent(0.88)
       ),
       primaryButtonLabel: ShieldConfiguration.Label(
@@ -122,7 +122,7 @@ class ShieldConfigurationExtension: ShieldConfigurationDataSource {
       backgroundColor: UIColor(ThemeManager.shared.themeColor),
       icon: makeEmojiIcon(randomMessage.emoji, size: 96),
       title: ShieldConfiguration.Label(
-        text: randomMessage.title,
+        text: "Blocked by Blocktab",
         color: .white
       ),
       subtitle: ShieldConfiguration.Label(

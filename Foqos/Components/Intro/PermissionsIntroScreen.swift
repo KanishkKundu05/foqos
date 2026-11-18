@@ -63,7 +63,7 @@ struct PermissionsIntroScreen: View {
       // Message text
       VStack(spacing: 16) {
         Text(
-          "Foqos needs Screen Time access to block your chosen apps and websites during focus sessions."
+          "Blocktab needs Screen Time access to block your chosen apps and websites during focus sessions."
         )
         .font(.system(size: 15))
         .foregroundColor(.primary)
@@ -71,7 +71,7 @@ struct PermissionsIntroScreen: View {
         .lineSpacing(4)
 
         Text(
-          "Your trust matters. Foqos is [100% open source](https://github.com/awaseem/foqos), so you can see exactly how it works. No account required. No tracking."
+          "Your trust matters. Blocktab is [100% open source](https://github.com/KanishkKundu05/foqos), so you can see exactly how it works. No account required. No tracking."
         )
         .font(.system(size: 16))
         .foregroundColor(.secondary)

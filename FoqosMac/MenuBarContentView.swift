@@ -116,21 +116,21 @@ struct MenuBarContentView: View {
         controller.refreshFromCloud()
         filterManager.refreshStatus()
       }
-      .help("Refresh Foqos state")
+      .help("Refresh Blocktab state")
 
       DiagnosticsExportButton(isMenuItem: true)
 
-      MenuActionItem(title: "Quit Foqos") {
+      MenuActionItem(title: "Quit Blocktab") {
         controller.quit()
       }
-      .help("Quit Foqos")
+      .help("Quit Blocktab")
     }
     .padding(.horizontal, -8)
   }
 
   private var updaterHelpText: String {
     if updaterController.isConfigured {
-      return "Check GitHub Releases for a newer version of Foqos"
+      return "Check GitHub Releases for a newer version of Blocktab"
     }
 
     return "The Sparkle appcast and signing key have not been configured yet"
@@ -142,18 +142,18 @@ struct MenuBarContentView: View {
     }
 
     if controller.isBlocking {
-      return "\(controller.syncedRecord?.profileName ?? "Foqos") is active"
+      return "\(controller.syncedRecord?.profileName ?? "Blocktab") is active"
     }
 
     switch controller.syncedRecord?.state {
     case .active:
       return "Profile has no explicit website rules"
     case .breakActive:
-      return "Foqos break is active"
+      return "Blocktab break is active"
     case .paused:
-      return "Foqos is paused"
+      return "Blocktab is paused"
     default:
-      return "No active Foqos profile"
+      return "No active Blocktab profile"
     }
   }
 

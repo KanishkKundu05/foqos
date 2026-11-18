@@ -1071,7 +1071,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosDeviceMonitor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosDeviceMonitor;
+				INFOPLIST_KEY_CFBundleDisplayName = BlocktabDeviceMonitor;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1104,7 +1104,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosDeviceMonitor/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosDeviceMonitor;
+				INFOPLIST_KEY_CFBundleDisplayName = BlocktabDeviceMonitor;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1263,9 +1263,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = foqos/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Foqos;
+				INFOPLIST_KEY_CFBundleDisplayName = Blocktab;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC to scan tags for item identification.";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Blocktab scans your NFC tag to start blocking distractions and unlock your apps.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan QR codes to active/deactivate profiles";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1312,9 +1312,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = foqos/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Foqos;
+				INFOPLIST_KEY_CFBundleDisplayName = Blocktab;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NFCReaderUsageDescription = "This app uses NFC to scan tags for item identification.";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Blocktab scans your NFC tag to start blocking distractions and unlock your apps.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to scan QR codes to active/deactivate profiles";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -1446,7 +1446,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosShieldConfig/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosShieldConfig;
+				INFOPLIST_KEY_CFBundleDisplayName = BlocktabShieldConfig;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1474,7 +1474,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosShieldConfig/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosShieldConfig;
+				INFOPLIST_KEY_CFBundleDisplayName = BlocktabShieldConfig;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1505,7 +1505,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = BlocktabWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1536,7 +1536,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosWidget;
+				INFOPLIST_KEY_CFBundleDisplayName = BlocktabWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1566,7 +1566,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosShieldAction/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosShieldAction;
+				INFOPLIST_KEY_CFBundleDisplayName = BlocktabShieldAction;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1594,7 +1594,7 @@
 				DEVELOPMENT_TEAM = YR54789JNV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoqosShieldAction/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = FoqosShieldAction;
+				INFOPLIST_KEY_CFBundleDisplayName = BlocktabShieldAction;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -102,7 +102,7 @@ struct FoqosWidgetLiveActivity: Widget {
       .resizable()
       .scaledToFit()
       .frame(width: size, height: size)
-      .accessibilityLabel("Foqos")
+      .accessibilityLabel("Blocktab")
   }
 
   private func expandedIslandTitle(name: String, state: FoqosWidgetAttributes.ContentState)
@@ -112,7 +112,7 @@ struct FoqosWidgetLiveActivity: Widget {
       activityIcon(for: state, size: expandedLogoSize)
 
       VStack(alignment: .leading, spacing: 1) {
-        Text("Foqos")
+        Text("Blocktab")
           .font(.system(size: 18, weight: .bold, design: .rounded))
           .foregroundColor(.primary)
           .lineLimit(1)
@@ -247,7 +247,7 @@ private struct FoqosLiveActivityContentView: View {
     HStack(alignment: .center, spacing: 16) {
       VStack(alignment: .leading, spacing: 8) {
         HStack(spacing: 4) {
-          Text("Foqos")
+          Text("Blocktab")
             .font(.headline)
             .fontWeight(.bold)
             .foregroundColor(.primary)

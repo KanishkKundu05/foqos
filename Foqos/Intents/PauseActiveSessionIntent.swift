@@ -10,9 +10,9 @@ struct PauseActiveSessionIntent: AppIntent {
     return modelContainer.mainContext
   }
 
-  static var title: LocalizedStringResource = "Pause Active Foqos Session"
+  static var title: LocalizedStringResource = "Pause Active Blocktab Session"
   static var description = IntentDescription(
-    "Pause the currently active Foqos session when its strategy supports pausing."
+    "Pause the currently active Blocktab session when its strategy supports pausing."
   )
 
   static var openAppWhenRun: Bool = false

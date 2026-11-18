@@ -2,11 +2,6 @@ import FamilyControls
 import SwiftData
 import SwiftUI
 
-let AMZN_STORE_LINK = "https://amzn.to/4fbMuTM"
-let TEMU_STORE_LINK =
-  "https://www.temu.com/ca/nfc-sticker-with--blank-chip-operating-at-13-56mhz-is-a-rewritable-label-with-504--of-memory-compatible-with-nfc-enabled-smartphones-g-601102251435878.html"
-let ALIEXPRESS_STORE_LINK = "https://www.aliexpress.com/item/1005010075431327.html"
-
 struct SettingsView: View {
   @Environment(\.dismiss) private var dismiss
   @Environment(\.modelContext) private var context
@@ -57,15 +52,13 @@ struct SettingsView: View {
           }
         }
 
-        AppIconPicker()
-
         Section("Help & Troubleshooting") {
           Link(destination: URL(string: "https://www.foqos.app/support.html")!) {
             HStack {
               VStack(alignment: .leading, spacing: 2) {
-                Text("Help Center")
+                Text("FoQoS setup guides")
                   .foregroundColor(.primary)
-                Text("Setup guides and common questions")
+                Text("Technical guides from the open-source project")
                   .font(.caption)
                   .foregroundColor(.secondary)
               }
@@ -133,44 +126,19 @@ struct SettingsView: View {
             }
           }
 
-          HStack {
-            Text("Made in")
-              .foregroundStyle(.primary)
-            Spacer()
-            Text("Calgary AB 🇨🇦")
-              .foregroundStyle(.secondary)
-          }
+          Link("Blocktab.app", destination: URL(string: "https://blocktab.app")!)
+          Link("Source code", destination: URL(string: "https://github.com/KanishkKundu05/foqos")!)
+          Text("Based on FoQoS by Ali Waseem. Open source under the MIT license.")
+            .font(.footnote).foregroundStyle(.secondary)
         }
 
-        Section("Buy NFC Tags") {
-          Link(destination: URL(string: AMZN_STORE_LINK)!) {
-            HStack {
-              Text("Amazon")
-                .foregroundColor(.primary)
-              Spacer()
-              Image(systemName: "arrow.up.right.square")
-                .foregroundColor(.secondary)
-            }
-          }
-          Link(destination: URL(string: TEMU_STORE_LINK)!) {
-            HStack {
-              Text("Temu")
-                .foregroundColor(.primary)
-              Spacer()
-              Image(systemName: "arrow.up.right.square")
-                .foregroundColor(.secondary)
-            }
-          }
-
-          Link(destination: URL(string: ALIEXPRESS_STORE_LINK)!) {
-            HStack {
-              Text("AliExpress")
-                .foregroundColor(.primary)
-              Spacer()
-              Image(systemName: "arrow.up.right.square")
-                .foregroundColor(.secondary)
-            }
-          }
+        Section("Your Blocktab") {
+          Label("NFC tag · Recommended", systemImage: "wave.3.right")
+          Text(
+            "Tap your tag to start blocking. Tap the same tag to unlock. You can choose other methods in each mode's settings."
+          )
+          .font(.subheadline).foregroundStyle(.secondary)
+          Link("Visit Blocktab", destination: URL(string: "https://blocktab.app")!)
         }
 
       }

@@ -88,7 +88,7 @@ struct ProfileWidgetEntry: TimelineEntry {
   }
 
   var statusLabel: String {
-    if isDataUnavailable { return "Open Foqos to refresh" }
+    if isDataUnavailable { return "Open Blocktab to refresh" }
     if isPauseActive { return "Paused" }
     if isBreakActive { return "On a break" }
     if isSessionActive { return "Focusing" }

@@ -20,7 +20,7 @@ struct ProfileWidgetEntryView: View {
           if let timer = entry.timer {
             SessionTimerText(timer: timer)
           } else {
-            Text(entry.isSessionActive ? entry.statusLabel : entry.profileName ?? "Foqos")
+            Text(entry.isSessionActive ? entry.statusLabel : entry.profileName ?? "Blocktab")
           }
         } icon: {
           Image(systemName: statusSymbol)
@@ -29,7 +29,7 @@ struct ProfileWidgetEntryView: View {
         circular
       case .accessoryRectangular:
         VStack(alignment: .leading, spacing: 3) {
-          Text(entry.profileName ?? "Foqos").font(.headline).lineLimit(1)
+          Text(entry.profileName ?? "Blocktab").font(.headline).lineLimit(1)
           Text("\(WidgetActivitySummary.durationLabel(entry.activity.weeklyDuration)) this week")
             .font(.caption)
           status(compact: false)
@@ -261,7 +261,7 @@ struct ProfileWidgetEntryView: View {
       }
       if !compact {
         Spacer(minLength: 0)
-        Text("foqos").font(.system(size: 11, weight: .bold, design: .rounded))
+        Text("Blocktab").font(.system(size: 11, weight: .bold, design: .rounded))
           .foregroundStyle(.tertiary)
       }
     }

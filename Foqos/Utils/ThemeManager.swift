@@ -6,6 +6,7 @@ class ThemeManager: ObservableObject {
 
   // Single source of truth for all theme colors
   static let availableColors: [(name: String, color: Color)] = [
+    ("Blocktab Olive", Color(hex: "#65734D")),
     ("Grimace Purple", Color(hex: "#894fa3")),
     ("Ocean Blue", Color(hex: "#007aff")),
     ("Mint Fresh", Color(hex: "#00c6bf")),
@@ -27,7 +28,7 @@ class ThemeManager: ObservableObject {
     ("Golden Hour", Color(hex: "#ffb347")),
   ]
 
-  private static let defaultColorName = "Grimace Purple"
+  private static let defaultColorName = "Blocktab Olive"
 
   @AppStorage(
     "foqosThemeColorName", store: UserDefaults(suiteName: "group.dev.ambitionsoftware.foqos"))

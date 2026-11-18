@@ -49,7 +49,7 @@ private enum GuidedProfileStep: Int, CaseIterable, Identifiable {
     case .name:
       return "Name this profile"
     case .strategy:
-      return "Choose how it starts and stops"
+      return "Tap to disconnect"
     case .apps:
       return "Choose apps and how to block them"
     case .domains:
@@ -77,13 +77,13 @@ private enum GuidedProfileStep: Int, CaseIterable, Identifiable {
       return "Profiles group the apps, websites, schedules, and rules you want to use together."
     case .strategy:
       return
-        "Pick the blocking method that fits this profile. "
-        + "You can mix and match how you want to start and stop."
+        "Your Blocktab NFC tag is selected by default. "
+        + "Keep it to start and stop with a tap, or choose another method."
     case .apps:
       return "Select the apps or categories this profile should restrict or allow."
     case .domains:
       return
-        "Add specific domains, choose how they're blocked in Safari, and optionally sync them with Foqos for Mac."
+        "Add specific domains, choose how they're blocked in Safari, and optionally sync them with Blocktab for Mac."
     case .strictUnlocks:
       return
         "Some strategies let any NFC tag, QR code, or barcode unlock profiles. "
@@ -546,7 +546,7 @@ private struct GuidedProfileReviewContent: View {
     }
 
     if draft.disableBackgroundStops {
-      enabled.append("Foqos required to stop")
+      enabled.append("Blocktab required to stop")
     }
 
     if !draft.enableEmergencyUnblock {
